@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Marolia LLC Subway</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .nav-container {
+            background-color: #008C45;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .menu-category {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .menu-item {
+            text-align: center;
+            padding: 1rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            color: #008C45;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        .description {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .logo {
+            max-width: 200px;
+            margin: 2rem auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="index.-2.html">← Back to Home</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Subway_2016_logo.svg/2560px-Subway_2016_logo.svg.png" alt="Subway Logo" class="logo">
+        
+        <div class="menu-category">
+            <h2>Series Subs</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://www.subway.com/-/media/USA/Images/Menu/SubwaySeriesSubs/Subway_Series_Subs_Supreme-Meats.jpg" alt="Supreme Meats">
+                    <h3>#1 Supreme Meats</h3>
+                    <p class="description">Pepperoni, salami, turkey, ham & bacon with provolone cheese</p>
+                    <p class="price">$9.99</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.subway.com/-/media/USA/Images/Menu/SubwaySeriesSubs/Subway_Series_Subs_Chicken-Cali-Fresh.jpg" alt="Chicken & Bacon Ranch">
+                    <h3>#2 Chicken & Bacon Ranch</h3>
+                    <p class="description">Rotisserie-style chicken, bacon, provolone cheese & ranch sauce</p>
+                    <p class="price">$9.49</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.subway.com/-/media/USA/Images/Menu/SubwaySeriesSubs/Subway_Series_Subs_The-Monster.jpg" alt="The Monster">
+                    <h3>#3 The Monster</h3>
+                    <p class="description">Steak, bacon, pepperoni, American cheese & ranch</p>
+                    <p class="price">$10.49</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h2>Fresh Melts™</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://www.subway.com/-/media/USA/Images/Menu/Melts/Buffalo_Chicken_Melt.jpg" alt="Buffalo Chicken Melt">
+                    <h3>Buffalo Chicken Melt</h3>
+                    <p class="description">Rotisserie-style chicken, buffalo sauce, monterey cheddar</p>
+                    <p class="price">$9.49</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.subway.com/-/media/USA/Images/Menu/Melts/Steak_Cheese_Melt.jpg" alt="Steak & Cheese Melt">
+                    <h3>Steak & Cheese Melt</h3>
+                    <p class="description">Steak, melted provolone, onions & green peppers</p>
+                    <p class="price">$9.99</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.subway.com/-/media/USA/Images/Menu/Melts/Ham_Cheese_Melt.jpg" alt="Ham & Cheese Melt">
+                    <h3>Ham & Cheese Melt</h3>
+                    <p class="description">Black Forest ham with melted cheese</p>
+                    <p class="price">$8.99</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h2>Fresh Favorites</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://www.subway.com/-/media/USA/Images/Menu/SubwayMVP/MVP_Turkey_Breast.jpg" alt="Turkey Breast">
+                    <h3>Turkey Breast</h3>
+                    <p class="description">Classic turkey breast with fresh veggies</p>
+                    <p class="price">$8.49</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.subway.com/-/media/USA/Images/Menu/SubwayMVP/MVP_Italian_BMT.jpg" alt="Italian B.M.T.">
+                    <h3>Italian B.M.T.®</h3>
+                    <p class="description">Genoa salami, pepperoni, and ham</p>
+                    <p class="price">$8.99</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.subway.com/-/media/USA/Images/Menu/SubwayMVP/MVP_Tuna.jpg" alt="Tuna">
+                    <h3>Tuna</h3>
+                    <p class="description">100% wild caught tuna mixed with mayo</p>
+                    <p class="price">$8.49</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h2>Sides & Extras</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://www.subway.com/-/media/USA/Images/Menu/Categories/Menu-Category-Cookies-Desktop-1440x640.jpg" alt="Cookies">
+                    <h3>Fresh Baked Cookies</h3>
+                    <p class="description">Chocolate Chip, White Chip Macadamia Nut, Double Chocolate</p>
+                    <p class="price">$0.99 each</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.subway.com/-/media/USA/Images/Menu/Categories/Menu-Category-Chips-Desktop-1440x640.jpg" alt="Chips">
+                    <h3>Chips</h3>
+                    <p class="description">Lay's, Doritos, Sun Chips, and more</p>
+                    <p class="price">$1.49</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.subway.com/-/media/USA/Images/Menu/Categories/Menu-Category-Drinks-Desktop-1440x640.jpg" alt="Drinks">
+                    <h3>Fountain Drinks</h3>
+                    <p class="description">Coca-Cola products</p>
+                    <p class="price">From $2.29</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

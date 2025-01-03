@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marolia LLC - Subway Franchise Templates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .franchise-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .franchise-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .franchise-card h3 {
+            margin: 1rem 0;
+        }
+
+        .franchise-card p {
+            color: #666;
+        }
+
+        .logo {
+            max-width: 200px;
+            margin: 1rem auto;
+        }
+
+        .menu-section {
+            background: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .menu-item {
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Add new navigation styles */
+        .nav-container {
+            background-color: #008C45;  /* Subway green */
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #006633;
+        }
+
+        .employee-login {
+            background-color: #FFC72C;  /* Subway yellow */
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .employee-login:hover {
+            background-color: #FFB400;
+        }
+
+        /* Adjust header to accommodate nav bar */
+        header {
+            padding-top: 1rem;
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .location-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .directions-btn {
+            display: inline-block;
+            background-color: #008C45;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+        .directions-btn:hover {
+            background-color: #006633;
+        }
+        .location-hours {
+            color: #666;
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Update navigation bar -->
+    <div class="nav-container">
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#menu-section">Menu</a>
+                <a href="#order">Order</a>
+                <a href="#catering">Catering Order</a>
+                <a href="#locations">Locations</a>
+            </div>
+            <a href="employee-login.html" class="employee-login">Employees Login</a>
+        </nav>
+    </div>
+
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Subway_2016_logo.svg/2560px-Subway_2016_logo.svg.png" alt="Subway Logo" class="logo">
+        <h1>Marolia LLC</h1>
+    </header>
+
+    <div class="container">
+        <!-- Add new promotions section at the top -->
+        <div class="promotions-section">
+            <h2>Current Promotions</h2>
+            <style>
+                .promotions-section {
+                    margin-bottom: 2rem;
+                }
+                .promotions-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 2rem;
+                    margin-top: 1rem;
+                }
+                .promo-card {
+                    background: white;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                    transition: transform 0.3s ease;
+                }
+                .promo-card:hover {
+                    transform: translateY(-5px);
+                }
+                .promo-image {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+                .promo-content {
+                    padding: 1.5rem;
+                }
+                .promo-title {
+                    color: #008C45;
+                    margin: 0 0 1rem 0;
+                }
+                .promo-description {
+                    color: #666;
+                    margin-bottom: 1rem;
+                }
+                .promo-price {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: #008C45;
+                }
+                .limited-time {
+                    background: #FFC72C;
+                    color: #333;
+                    padding: 0.25rem 0.75rem;
+                    border-radius: 4px;
+                    display: inline-block;
+                    font-size: 0.9rem;
+                    margin-top: 1rem;
+                }
+            </style>
+            <div class="promotions-grid">
+                <div class="promo-card">
+                    <img src="https://www.subway.com/-/media/USA/Images/Promotions/Footlong-Season-Pass/footlong-season-pass-hero-desktop.jpg" 
+                         alt="Footlong Season Pass" 
+                         class="promo-image">
+                    <div class="promo-content">
+                        <h3 class="promo-title">Footlong Season Pass</h3>
+                        <p class="promo-description">Get 50% off Footlong Subs when you join Subway MVP!</p>
+                        <span class="limited-time">Limited Time Offer</span>
+                    </div>
+                </div>
+
+                <div class="promo-card">
+                    <img src="https://www.subway.com/-/media/USA/Images/Promotions/BOGO50/bogo-50-hero-desktop.jpg" 
+                         alt="BOGO 50% Off" 
+                         class="promo-image">
+                    <div class="promo-content">
+                        <h3 class="promo-title">BOGO 50% OFF</h3>
+                        <p class="promo-description">Buy one Footlong, get one 50% off with code BOGO50</p>
+                        <span class="limited-time">Online Orders Only</span>
+                    </div>
+                </div>
+
+                <div class="promo-card">
+                    <img src="https://www.subway.com/-/media/USA/Images/Menu/SubwaySeriesSubs/Subway_Series_Subs_Supreme-Meats.jpg" 
+                         alt="New Subway Series" 
+                         class="promo-image">
+                    <div class="promo-content">
+                        <h3 class="promo-title">Try The New Subway Series</h3>
+                        <p class="promo-description">12 all-new signature sandwiches</p>
+                        <p class="promo-price">Starting at $8.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-section" id="locations">
+            <h2>Our Tulsa Locations</h2>
+            <div class="location-grid">
+                <div class="location-card">
+                    <h3>Downtown Tulsa</h3>
+                    <p>427 S Boston Ave<br>Tulsa, OK 74103</p>
+                    <p class="location-hours">Hours: 7:00 AM - 9:00 PM Daily</p>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=427+S+Boston+Ave+Tulsa+OK+74103" 
+                       target="_blank" 
+                       class="directions-btn">Get Directions</a>
+                </div>
+
+                <div class="location-card">
+                    <h3>Woodland Hills</h3>
+                    <p>7021 S Memorial Dr<br>Tulsa, OK 74133</p>
+                    <p class="location-hours">Hours: 7:00 AM - 10:00 PM Daily</p>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=7021+S+Memorial+Dr+Tulsa+OK+74133" 
+                       target="_blank" 
+                       class="directions-btn">Get Directions</a>
+                </div>
+
+                <div class="location-card">
+                    <h3>Broken Arrow</h3>
+                    <p>2401 W Kenosha St<br>Broken Arrow, OK 74012</p>
+                    <p class="location-hours">Hours: 7:00 AM - 10:00 PM Daily</p>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=2401+W+Kenosha+St+Broken+Arrow+OK+74012" 
+                       target="_blank" 
+                       class="directions-btn">Get Directions</a>
+                </div>
+
+                <div class="location-card">
+                    <h3>Tulsa Hills</h3>
+                    <p>7858 S Olympia Ave<br>Tulsa, OK 74132</p>
+                    <p class="location-hours">Hours: 7:00 AM - 9:00 PM Daily</p>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=7858+S+Olympia+Ave+Tulsa+OK+74132" 
+                       target="_blank" 
+                       class="directions-btn">Get Directions</a>
+                </div>
+
+                <div class="location-card">
+                    <h3>East Tulsa</h3>
+                    <p>11524 E 21st St<br>Tulsa, OK 74129</p>
+                    <p class="location-hours">Hours: 7:00 AM - 9:00 PM Daily</p>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=11524+E+21st+St+Tulsa+OK+74129" 
+                       target="_blank" 
+                       class="directions-btn">Get Directions</a>
+                </div>
+
+                <div class="location-card">
+                    <h3>Midtown Tulsa</h3>
+                    <p>3534 S Peoria Ave<br>Tulsa, OK 74105</p>
+                    <p class="location-hours">Hours: 7:00 AM - 9:00 PM Daily</p>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=3534+S+Peoria+Ave+Tulsa+OK+74105" 
+                       target="_blank" 
+                       class="directions-btn">Get Directions</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>About Subway</h2>
+            <p>Subway is one of the world's largest restaurant chains, known for its made-to-order sandwiches, salads, and wraps. Each restaurant offers:</p>
+            <ul>
+                <li>Fresh-baked bread throughout the day</li>
+                <li>Wide variety of fresh vegetables</li>
+                <li>Multiple protein options including turkey, ham, chicken, and plant-based alternatives</li>
+                <li>Signature sauces and seasonings</li>
+                <li>Breakfast menu items</li>
+                <li>Catering services</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html> 
